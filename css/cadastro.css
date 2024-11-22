@@ -1,0 +1,123 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-image: url(../img/energia-eolica.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    width: 40%;
+    height: auto;
+    padding: 20px 0;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.right {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.right h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 30px;
+    color: white;
+}
+
+.right input {
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    outline: none;
+    padding: 5px 0;
+    font-size: 16px;
+    border-radius: 15px;
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+input:focus {
+    border-bottom: 2px solid #D3C57A;
+}
+
+.checkbox {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+    color: white;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    text-align: center;
+    padding: 0 20px;
+    max-width: 5    00px;
+}
+
+.checkbox input {
+    width: 20px;
+    margin-right: 10px;
+}
+
+.conta {
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+}
+
+.right button {
+    color: white;
+    width: 30%;
+    height: 40px;
+    border-radius: 15px;
+    background-color: #D3C57A;
+    border: black 1px solid;
+    transition: all 0.5s;
+    font-size: 20px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+}
+
+.right button:hover {
+    transform: scale(1.05);
+}
+
+/* Estilo para campos inválidos */
+.invalid {
+    border-bottom: 2px solid red;
+}
+
+/* Estilo para mensagens de erro */
+.error-message {
+    color: red;
+    font-size: 14px;
+    font-family: "Roboto", sans-serif;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none; /* Inicialmente escondida */
+}
+
